@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+
+html {
+  scroll-behavior: smooth ;
+}
+*,*::after,*::before{
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-track {
+  background-color: transparent
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary_lightColor);
+  border-radius: 20px
 }
 
-.App-link {
-  color: #61dafb;
+
+
+:root {
+  --card-height: 300px;
+  --card-width : calc(var(--card-height) / 1.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: SpaceBoards;
+  src        : url(./Assets/Fonts/Spaceboardsdemo-8MyRB.otf);
+}
+
+@font-face {
+  font-family: FutureWave;
+  src        : url(./Assets/Fonts/Futurewave.otf);
+}
+
+@font-face {
+  font-family: NeoFuture;
+  src        : url(./Assets/Fonts/neonfuture20demo-l3jp3.otf);
+}
+
+@font-face {
+  font-family: VoyagerHeavy;
+  src        : url(./Assets/Fonts/Voyager\ Heavy.otf);
+}
+
+
+@font-face {
+  font-family: VoyagerLight;
+  src        : url(./Assets/Fonts/Voyager\ Light.otf);
+}
+
+@font-face {
+  font-family: Outfit;
+  src        : url(./Assets/Fonts/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Glitch;
+  src        : url(./Assets/Fonts/Hacked-KerX.ttf);
+}
+body {
+  width     : 100vw;
+  height    : 100vh;
+  overflow-x: hidden;
 }
