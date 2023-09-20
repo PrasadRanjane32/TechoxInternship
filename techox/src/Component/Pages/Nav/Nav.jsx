@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import navlogo from '../../../Assets/img/logo-2.png'
 import './Nav.css';
 
 const Nav = () => {
@@ -8,6 +9,7 @@ const Nav = () => {
     <div className="navbar">
       <Link to="/" style={{ textDecoration: 'none' }}>
         <div className="navbar-logo">
+        <img draggable="false" className="navbar-logo" src={navlogo} alt=""></img> 
           <h2>Techox</h2>
           
         </div>

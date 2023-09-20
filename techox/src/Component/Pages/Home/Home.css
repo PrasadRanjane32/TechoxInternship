@@ -1,0 +1,65 @@
+.home {
+    background-image: url(../../../Assets/img/bg.jpg);
+    background-size: inherit;
+    width: 100vw;
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    scroll-snap-align: start;
+    display: grid;
+  place-items: center;
+  font-family: SpaceBoards;
+  }
+  .land {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+  .homeSecond {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35%;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-top: 17%;
+  }
+  .heading {
+    font-size: clamp(.5rem, .2rem + 6vw, 4rem);
+    /* width: 300px; */
+    /* color: #fff; */
+    text-shadow:
+      0 0 1px #fff,
+      0 0 8px #fff,
+      0 0 16px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+      animation: flicker 1s infinite alternate;
+
+  }
+  .subHeading {
+    font-size: clamp(0.2rem, .2rem + 3vw, 1.5rem);
+  }
+ .htitle {
+    color: white;
+    text-align: center;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 700px){
+   
+    .htitle{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 25rem;
+      margin: 0;
+    }
+   
+  }
+  
